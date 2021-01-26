@@ -16,6 +16,9 @@
 		92855AEF25C07EDD007A5C6E /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855AEE25C07EDD007A5C6E /* CategoryCell.swift */; };
 		92855AF225C082E9007A5C6E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855AF125C082E9007A5C6E /* Category.swift */; };
 		92855AF625C083CD007A5C6E /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855AF525C083CD007A5C6E /* DataService.swift */; };
+		92855AF825C0A1B6007A5C6E /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855AF725C0A1B6007A5C6E /* ProductCell.swift */; };
+		92855AFA25C0A28E007A5C6E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855AF925C0A28E007A5C6E /* Product.swift */; };
+		92855AFC25C0A59A007A5C6E /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855AFB25C0A59A007A5C6E /* ProductsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		92855AEE25C07EDD007A5C6E /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		92855AF125C082E9007A5C6E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		92855AF525C083CD007A5C6E /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		92855AF725C0A1B6007A5C6E /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		92855AF925C0A28E007A5C6E /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		92855AFB25C0A59A007A5C6E /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				92855AF125C082E9007A5C6E /* Category.swift */,
+				92855AF925C0A28E007A5C6E /* Product.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -88,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				92855ADB25C07804007A5C6E /* CategoryVC.swift */,
+				92855AFB25C0A59A007A5C6E /* ProductsVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -96,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				92855AEE25C07EDD007A5C6E /* CategoryCell.swift */,
+				92855AF725C0A1B6007A5C6E /* ProductCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,11 +189,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				92855ADC25C07804007A5C6E /* CategoryVC.swift in Sources */,
+				92855AFA25C0A28E007A5C6E /* Product.swift in Sources */,
 				92855AF225C082E9007A5C6E /* Category.swift in Sources */,
 				92855AD825C07804007A5C6E /* AppDelegate.swift in Sources */,
 				92855AF625C083CD007A5C6E /* DataService.swift in Sources */,
 				92855ADA25C07804007A5C6E /* SceneDelegate.swift in Sources */,
+				92855AF825C0A1B6007A5C6E /* ProductCell.swift in Sources */,
 				92855AEF25C07EDD007A5C6E /* CategoryCell.swift in Sources */,
+				92855AFC25C0A59A007A5C6E /* ProductsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +341,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = 8L83CZ8839;
 				INFOPLIST_FILE = "coder-swag/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -347,6 +360,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = 8L83CZ8839;
 				INFOPLIST_FILE = "coder-swag/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

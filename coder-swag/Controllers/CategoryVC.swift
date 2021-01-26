@@ -9,6 +9,7 @@
 import UIKit
 
 class CategoryVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DataService.instance.getCategories().count
     }
@@ -20,6 +21,23 @@ class CategoryVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             return cell
         }else{
             return CategoryCell()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let category = DataService.instance.getCategories()[indexPath.row]
+        performSegue(withIdentifier: "ProductsVC", sender: category)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let productsVC = segue.destination as? ProductsVC{
+            let barBtn = UIBarButtonItem()
+            barBtn.title = ""
+            navigationItem.backBarButtonItem = barBtn
+            
+            
+            assert(sender as? Category != nil)
+            productsVC.initProducts(category: sender as! Category)
         }
     }
     
