@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		92855AD825C07804007A5C6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855AD725C07804007A5C6E /* AppDelegate.swift */; };
 		92855ADA25C07804007A5C6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855AD925C07804007A5C6E /* SceneDelegate.swift */; };
-		92855ADC25C07804007A5C6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855ADB25C07804007A5C6E /* ViewController.swift */; };
+		92855ADC25C07804007A5C6E /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855ADB25C07804007A5C6E /* CategoryVC.swift */; };
 		92855ADF25C07804007A5C6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92855ADD25C07804007A5C6E /* Main.storyboard */; };
 		92855AE125C07804007A5C6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92855AE025C07804007A5C6E /* Assets.xcassets */; };
 		92855AE425C07804007A5C6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92855AE225C07804007A5C6E /* LaunchScreen.storyboard */; };
+		92855AEF25C07EDD007A5C6E /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855AEE25C07EDD007A5C6E /* CategoryCell.swift */; };
+		92855AF225C082E9007A5C6E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855AF125C082E9007A5C6E /* Category.swift */; };
+		92855AF625C083CD007A5C6E /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92855AF525C083CD007A5C6E /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		92855AD425C07804007A5C6E /* coder-swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coder-swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92855AD425C07804007A5C6E /* Swag Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swag Shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92855AD725C07804007A5C6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92855AD925C07804007A5C6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		92855ADB25C07804007A5C6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		92855ADB25C07804007A5C6E /* CategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
 		92855ADE25C07804007A5C6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92855AE025C07804007A5C6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92855AE325C07804007A5C6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92855AE525C07804007A5C6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92855AEE25C07EDD007A5C6E /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		92855AF125C082E9007A5C6E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		92855AF525C083CD007A5C6E /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +54,7 @@
 		92855AD525C07804007A5C6E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				92855AD425C07804007A5C6E /* coder-swag.app */,
+				92855AD425C07804007A5C6E /* Swag Shop.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +62,50 @@
 		92855AD625C07804007A5C6E /* coder-swag */ = {
 			isa = PBXGroup;
 			children = (
+				92855AF325C083B0007A5C6E /* Services */,
+				92855AED25C07E93007A5C6E /* Views */,
+				92855AEC25C07E8B007A5C6E /* Controllers */,
+				92855AEB25C07E84007A5C6E /* Models */,
 				92855AD725C07804007A5C6E /* AppDelegate.swift */,
 				92855AD925C07804007A5C6E /* SceneDelegate.swift */,
-				92855ADB25C07804007A5C6E /* ViewController.swift */,
 				92855ADD25C07804007A5C6E /* Main.storyboard */,
 				92855AE025C07804007A5C6E /* Assets.xcassets */,
 				92855AE225C07804007A5C6E /* LaunchScreen.storyboard */,
 				92855AE525C07804007A5C6E /* Info.plist */,
 			);
 			path = "coder-swag";
+			sourceTree = "<group>";
+		};
+		92855AEB25C07E84007A5C6E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				92855AF125C082E9007A5C6E /* Category.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		92855AEC25C07E8B007A5C6E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				92855ADB25C07804007A5C6E /* CategoryVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		92855AED25C07E93007A5C6E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92855AEE25C07EDD007A5C6E /* CategoryCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		92855AF325C083B0007A5C6E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				92855AF525C083CD007A5C6E /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,7 +125,7 @@
 			);
 			name = "coder-swag";
 			productName = "coder-swag";
-			productReference = 92855AD425C07804007A5C6E /* coder-swag.app */;
+			productReference = 92855AD425C07804007A5C6E /* Swag Shop.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -138,9 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92855ADC25C07804007A5C6E /* ViewController.swift in Sources */,
+				92855ADC25C07804007A5C6E /* CategoryVC.swift in Sources */,
+				92855AF225C082E9007A5C6E /* Category.swift in Sources */,
 				92855AD825C07804007A5C6E /* AppDelegate.swift in Sources */,
+				92855AF625C083CD007A5C6E /* DataService.swift in Sources */,
 				92855ADA25C07804007A5C6E /* SceneDelegate.swift in Sources */,
+				92855AEF25C07EDD007A5C6E /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +336,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jerry-lai.coder-swag";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Swag Shop";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,7 +354,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jerry-lai.coder-swag";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Swag Shop";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
